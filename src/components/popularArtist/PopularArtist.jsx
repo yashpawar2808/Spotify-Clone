@@ -2,11 +2,13 @@ import React from 'react'
 import './popularArtist.css'
 import ArtistCard from '../artistCard/ArtistCard'
 
-const PopularArtist = () => {
+const PopularArtist = ({setCurrentPage}) => {
   return (
-    <div className='popularArtistMainContainer'>
-      PopularArtist
-      <ArtistCard/>
+    <div className='popularArtistMainContainer trendiingSectionMainContainer'>
+      <span>
+        Popular artists
+      </span>
+      <ArtistCard setCurrentPage={setCurrentPage}/>
     </div>
   )
 }

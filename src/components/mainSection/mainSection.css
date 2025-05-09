@@ -4,4 +4,5 @@
     overflow-y: scroll;
     border-radius: 10px;
     background: linear-gradient(to bottom, #2c2c2c, #000);
+    height: 98%;
 }

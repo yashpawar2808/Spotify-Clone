@@ -2,11 +2,11 @@ import React from 'react'
 import './trending.css'
 import TrendingCard from '../trendingCard/TrendingCard'
 
-const Trending = () => {
+const Trending = ({setCurrentPage, setCurrentEle}) => {
   return (
     <div className='trendiingSectionMainContainer'>
       <span>Trending Songs</span>
-      <TrendingCard/>
+      <TrendingCard setCurrentPage={setCurrentPage} setCurrentEle={setCurrentEle}/>
     </div>
   )
 }
