@@ -1,6 +1,30 @@
-.popularArtistMainContainer{
-   /* border: 2px solid yellow;  */
-    width: 98%;
-    margin: auto;
-    height: 50%;
+.popularArtistMainContainer {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.popularArtistMainContainer > span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* popularArtist.css */
+.popularArtistMainContainer {
+  padding: 20px;
+  overflow-x: hidden; /* Changed from auto to hidden */
+  position: relative;
+}
+
+.popularArtistMainContainer > span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.artistCardsWrapper {
+  position: relative;
+  width: 100%;
 }

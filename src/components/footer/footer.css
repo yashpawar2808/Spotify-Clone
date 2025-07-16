@@ -1,5 +1,51 @@
 .footerSectionMainContainer {
-    border: 2px solid red;
-    height: 10%;
-    background: linear-gradient(to right, #af2896, #509bf5);
+  /*  border: 2px solid red; */
+  height: 10%;
+  background: linear-gradient(to right, #af2896, #509bf5);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.spotify-banner {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: linear-gradient(to right, #af2896, #509bf5);
+  color: white;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text strong {
+  font-size: 16px;
+}
+
+.banner-text span {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.signup-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #f0f0f0;
 }

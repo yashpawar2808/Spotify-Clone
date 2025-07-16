@@ -1,5 +1,5 @@
 .trendingCardMainContainer{
-   /* border: 2px solid rgb(2, 255, 14); */
+   /* border: 2px solid rgb(2, 255, 14);*/
     display: flex;
     margin-top: 1rem;
     height: 90%;
@@ -7,7 +7,7 @@
 }
 
 .cardContainer{
-   /* border: 2px solid red; */
+  /*  border: 2px solid red; */
     width: 16%;
     height: 100%;
     display: flex;
@@ -28,9 +28,55 @@
 }
 
 .CardTextContainer h2{
-    font-size: 1rem;
+  font-size: 0.9rem;
 }
 
-.CardTextContainer p {
-    font-size: 0.8rem;
+.CardTextContainer p{
+    font-size: 0.9rem;
 }
+
+.cardContainer {
+ /* border: 2px solid red;*/
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Important for absolute children */
+}
+
+.cardContainer {
+  position: relative;
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardContainerhover {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(53, 162, 26);
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-top: 49px;
+  margin-left: 49px;
+  transform: translate(-50%, -50%) scale(0.8); /* Start slightly smaller */
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction when hidden */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  z-index: 1;
+}
+
+.cardContainer:hover .cardContainerhover {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); /* Grows to full size */
+  pointer-events: auto;
+}
+

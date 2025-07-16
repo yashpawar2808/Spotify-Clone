@@ -1,0 +1,219 @@
+/* Higher specificity to override conflicts */
+.custom-player.custom-player {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100px !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 20px !important;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.8) !important;
+  z-index: 1000 !important;
+  box-sizing: border-box !important;
+  font-family: Arial, sans-serif !important;
+}
+
+.custom-player .player-left,
+.custom-player .player-center,
+.custom-player .player-right {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.custom-player .player-left {
+  flex: 1 !important;
+  gap: 12px !important;
+  overflow: hidden !important;
+}
+
+.custom-player .song-img {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 4px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+}
+
+.custom-player .song-title {
+  font-weight: bold !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  color: #fff !important;
+}
+
+.custom-player .artist-name {
+  font-size: 0.85rem !important;
+  color: #b3b3b3 !important;
+}
+
+.custom-player .player-center {
+  flex: 2 !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.custom-player .controls {
+  display: flex !important;
+  background: #000 !important;
+  height: 50px !important;
+  gap: 50px !important;
+  align-items: center !important;
+  margin-bottom: 8px !important;
+  padding: 0 !important;
+}
+
+.custom-player .control-btn {
+  background: none !important;
+  border: none !important;
+  color: white !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: color 0.2s ease-in-out !important;
+}
+
+.custom-player .control-btn.active {
+  color: #1db954 !important;
+}
+
+.custom-player .play-btn {
+  font-size: 2rem !important;
+}
+
+/* Progress Bar */
+.custom-player .progress-bar {
+  width: 680px !important;
+  height: 4px !important;
+  border-radius: 3px !important;
+  -webkit-appearance: none !important;
+  background: #444 !important;
+  outline: none !important;
+  cursor: pointer !important;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) var(--progress, 0%),
+    #444 var(--progress, 0%),
+    #444 100%
+  ) !important;
+  margin-bottom: 4px !important;
+}
+
+/* WebKit styles */
+.custom-player .progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: 10px !important;
+  height: 10px !important;
+  background: rgb(255, 255, 255) !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  margin-top: 0 !important;
+  border: none !important;
+}
+
+/* Firefox styles */
+.custom-player .progress-bar::-moz-range-track {
+  background: #444 !important;
+  height: 6px !important;
+  border-radius: 3px !important;
+}
+
+.custom-player .progress-bar::-moz-range-progress {
+  background: #0f0 !important;
+  height: 6px !important;
+  border-radius: 3px !important;
+}
+
+.custom-player .progress-bar::-moz-range-thumb {
+  width: 14px !important;
+  height: 14px !important;
+  background: #0f0 !important;
+  border-radius: 50% !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+/* Volume Slider */
+.custom-player .volume-slider {
+  width: 120px !important;
+  max-width: 120px !important;
+  height: 6px !important;
+  border-radius: 3px !important;
+  -webkit-appearance: none !important;
+  background: #444 !important;
+  outline: none !important;
+  cursor: pointer !important;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) var(--volume, 100%),
+    #444 var(--volume, 100%),
+    #444 100%
+  ) !important;
+}
+
+/* WebKit volume slider thumb */
+.custom-player .volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: 14px !important;
+  height: 14px !important;
+  background: rgb(255, 255, 255) !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  margin-top: 0 !important;
+  border: none !important;
+}
+
+/* Firefox volume slider */
+.custom-player .volume-slider::-moz-range-track {
+  background: #444 !important;
+  height: 6px !important;
+  border-radius: 3px !important;
+}
+
+.custom-player .volume-slider::-moz-range-progress {
+  background: #0f0 !important;
+  height: 6px !important;
+  border-radius: 3px !important;
+}
+
+.custom-player .volume-slider::-moz-range-thumb {
+  width: 14px !important;
+  height: 14px !important;
+  background: #0f0 !important;
+  border-radius: 50% !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.custom-player .player-right {
+  flex: 1 !important;
+  justify-content: flex-end !important;
+  gap: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.custom-player .volume-icon-btn {
+  background: none !important;
+  border: none !important;
+  color: white !important;
+  font-size: 1.2rem !important;
+  cursor: pointer !important;
+}
+
+.custom-player .time-display {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 680px !important;
+  font-size: 0.85rem !important;
+  color: #ccc !important;
+  margin-top: 4px !important;
+}

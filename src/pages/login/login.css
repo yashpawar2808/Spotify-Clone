@@ -1,0 +1,108 @@
+.login-page {
+    /* Remove centering styles - handled by parent now */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: rgba(24, 24, 24, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.spotify-logo {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: white;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    background: none;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #2a2a2a;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.login-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.continue-btn {
+    width: 100%;
+    background-color: #1ed760;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.continue-btn:hover {
+    background-color: #1fdf64;
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #1ed760;
+    text-decoration: none;
+}
+
+.recaptcha-notice {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #b3b3b3;
+}
+
+.recaptcha-notice a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
