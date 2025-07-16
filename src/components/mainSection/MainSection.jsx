@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./mainSection.css";
 import Trending from "../trending/Trending";
-import PopularArtist from "../populArartist/PopularArtist";
+import PopularArtist from "../popularArtist/PopularArtist";
 import SpecificMusicFile1 from "../../pages/specificMusicPage/SpecificMusicFile1";
 import ArtistSpecificFile from "../../pages/artistSpecificPage/ArtistSpecificFile";
 import Login from "../../pages/login/Login";
